@@ -174,30 +174,9 @@ nav {
 
 .logo {
 
-    animation: animation5 10s ease-out 30s alternate infinite ;
-}
+   rotate: 25deg;
 
-@keyframes animation5 {
-    0% {
-        
-    }
 
-    25% {
-        rotate: 30deg ;
-    }
-
-    50% {
-        rotate: -60deg ;
-    }
-
-    75% {
-        rotate: 60deg;
-    }
-
-    100% {
-        rotate:  0 ;
-    }
-}
 
 .types img:hover {
 
