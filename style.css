@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Montserrat" , sans-serif;
+    background-color:  #1C34CA ;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+.logo {
+    border-radius:50% ;
+     
+
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    padding-top: 20px;
+    
+}
+
+ul {
+    
+    list-style: none;
+    display: flex;
+    
+}
+
+li {
+    padding: 12px 15px ;
+}
+
+a {
+    text-decoration: none;
+    color:  #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.content {
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 85vh;
+    padding: 0 7rem;
+
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    color:  #f2f2f2;
+    font-weight: 800;
+}
+
+.text span {
+    font-size: 50px ;
+    font-weight: 900;
+}
+
+.text p {
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 600;
+    color:  #f2f2f2;
+    line-height: 30px;
+    
+}
+
+.selecto img {
+    height: 400px;
+    animation: animation1 1s ease-out ;
+    filter:drop-shadow(0 0 15px #fff);
+    padding-bottom: 50px;
+}
+
+.text {
+    animation: animation2 1s ease-out ;
+}
+
+nav {
+
+    animation: animation3 1s ease-out;
+}
+
+@keyframes animation1 {
+    0% {
+         translate: 500px 0;
+        
+    }
+
+    100% {
+        translate: 0 0;
+    }
+
+
+}
+
+
+@keyframes animation2 {
+    0% {
+        translate: -400px 0;
+    }
+
+    100% {
+        translate: 0 0 ;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        translate: 0 -100px;
+    }
+
+    100% {
+        translate: 0 0 ;
+    }
+}
+
+
+.types img {
+    height: 100px;
+    border: 1px solid #FCD238;
+    border-radius: 15px;
+    animation: animation4 1s ease-out;
+    transition: .5s ease;
+
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -6rem;
+    animation: animation4 1s ease-out;
+    
+}
+
+@keyframes animation4 {
+    0% {
+        translate: 0 100px;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+
+.logo {
+
+    animation: animation5 10s ease-out 30s alternate infinite ;
+}
+
+@keyframes animation5 {
+    0% {
+        
+    }
+
+    25% {
+        rotate: 30deg ;
+    }
+
+    50% {
+        rotate: -60deg ;
+    }
+
+    75% {
+        rotate: 60deg;
+    }
+
+    100% {
+        rotate:  0 ;
+    }
+}
+
+.types img:hover {
+
+    scale: 1.03;
+    box-shadow: 0 0 15px;
+
+}
+
+/* 1000/1100px */
+
+@media (min-width:1000px) and (max-width:1100) {
+
+
+
+        
+
+
+
+}
