@@ -43,6 +43,8 @@ ul {
 
 li {
     padding: 12px 15px ;
+    
+      
 }
 
 a {
@@ -50,8 +52,15 @@ a {
     color:  #f2f2f2;
     font-size: 18px;
     font-weight: 500;
+    
+    
 }
+    
 
+a:hover {
+
+    border-bottom: 2px solid ;
+}
 
 .content {
     
