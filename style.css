@@ -7,192 +7,473 @@
     
 }
 
+
+
+
 body {
     font-family: "Montserrat" , sans-serif;
-    background-color:  #1C34CA ;
+    background-color: #1C34CA  ;
     min-height: 100vh;
-    overflow: hidden;
+   
+    
     
 }
 
-.logo {
-    border-radius:50% ;
-     
 
-}
-
-.logo img {
-    border-radius: 50%;
-    height: 60px;
-}
+/* nav */ 
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
+    align-items: center;
     padding: 0 7rem;
-    padding-top: 20px;
+    margin-top: 3px;
+    animation: nav 1s ease-out 0s 1 alternate;
+}
+
+
+/* logo */ 
+
+.logo img{
+    height: 50px;
+    border-radius: 50%;
+    rotate: 25deg;
+}
+
+.logo {
+    border-radius: 50%;
+    
     
 }
 
+
+/* links ul */
+
 ul {
-    
     list-style: none;
     display: flex;
-    
+
 }
 
 li {
     padding: 12px 15px ;
-    
-      
 }
 
 a {
-    text-decoration: none;
-    color:  #f2f2f2;
     font-size: 18px;
     font-weight: 500;
-    
-    
+    color: #f2f2f2;
+    text-decoration: none ;
 }
-    
 
-a:hover {
 
-    border-bottom: 2px solid ;
-}
+
+
+/* content */
 
 .content {
-    
+    padding:0 7rem  ;
+    padding-top:100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content:space-between;
-    height: 85vh;
-    padding: 0 7rem;
-
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.text h2 {
-    margin-bottom: 20px;
-    color:  #f2f2f2;
-    font-weight: 800;
-}
+/* slecto */
 
-.text span {
-    font-size: 50px ;
-    font-weight: 900;
-}
+.selecto {
 
-.text p {
-    max-width: 500px;
-    font-size: 20px;
-    font-weight: 600;
-    color:  #f2f2f2;
-    line-height: 30px;
-    
+    animation: bottle 1s ease-out 0s 1 alternate;
 }
 
 .selecto img {
+
     height: 400px;
-    animation: animation1 1s ease-out ;
-    filter:drop-shadow(0 0 15px #fff);
-    padding-bottom: 50px;
+    filter: drop-shadow(0 0 15px #fff);
+    
+}
+
+
+/* text */ 
+
+.text h2 {
+    color: #fff;
+    margin-bottom:25px ;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text span {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+.text p{
+    color: #fff;
+    line-height: 30px;
+    font-size: 20px ;
+    font-weight: 600;
+    max-width: 520px;
 }
 
 .text {
-    animation: animation2 1s ease-out ;
+    animation: text 1s ease-out 0s 1 alternate;
 }
 
-nav {
 
-    animation: animation3 1s ease-out;
-}
+/* text animation  */
 
-@keyframes animation1 {
+@keyframes text {
     0% {
-         translate: 500px 0;
-        
+        translate: -500px 0;
     }
 
     100% {
         translate: 0 0;
     }
-
-
 }
 
 
-@keyframes animation2 {
+/* selecto animation */ 
+
+@keyframes bottle {
+
     0% {
-        translate: -400px 0;
+        translate: 500px 0 ;
     }
 
     100% {
-        translate: 0 0 ;
+        translate: 0 0;
     }
 }
 
-@keyframes animation3 {
+
+/* nav animation */ 
+
+@keyframes nav {
     0% {
         translate: 0 -100px;
     }
 
     100% {
-        translate: 0 0 ;
+        translate: 0 0;
     }
 }
 
+/* hover effect */ 
+
+a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+/* types */
 
 .types img {
-    height: 100px;
-    border: 1px solid #FCD238;
-    border-radius: 15px;
-    animation: animation4 1s ease-out;
-    transition: .5s ease;
 
+    height: 75px;
+    border-radius: 15px;
+    border: 1px solid #4a58b1;
+    transition: 0.3s linear 0s ;
 }
 
 .types {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-top: -6rem;
-    animation: animation4 1s ease-out;
+    gap: 40px ;
+    height: 10vh;
+    min-height: 12vh;
+    overflow: hidden;
+    animation: types 1s ease-out 0s alternate ;
+    margin-top: -30px;
     
 }
 
-@keyframes animation4 {
-    0% {
-        translate: 0 100px;
-    }
-
-    100% {
-        translate: 0 0;
-    }
-}
-
-
-.logo {
-
-   rotate: 25deg;
-}
-
-
+/* types hover effect */ 
 
 .types img:hover {
 
     scale: 1.03;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 0 10px ;
+    cursor: pointer;
+}
+
+/* types animation */ 
+
+@keyframes types {
+
+    0% {
+        translate: 0 100px;
+
+
+
+    }
+}
+
+/* the responsive design  */   /* evry value in comment */
+
+
+
+/* 1000px and 1115px */
+
+@media (min-width:1000px) and (max-width:1115px) {
+
+
+        .selecto {
+            margin-bottom: 20px;
+        }
+
+        
 
 }
 
-/* 1000/1100px */
-
-@media (min-width:1000px) and (max-width:1100) {
 
 
+/*  750px and 999px     */
 
-        
+
+@media (min-width:750px) and (max-width:999px) {
+
+
+
+       .selecto img {
+        height: 250px;
+
+       }
+
+       .text p {
+                     max-width: 300px;
+                     line-height: 25px;
+                     font-size: 20px;
+                     
+       }
+
+       .text {
+        margin-bottom: 20px;
+       }
+
+       .text h2 {
+        font-weight: 700;
+        font-size: 25px;
+       }
+
+       .text span {
+
+                          font-weight: 800;
+                          font-size: 40px;
+
+       }
+
+
+       .types {
+        margin-top: 20px;
+       }
+
+
+       .content {
+        height: 65vh;
+       }
+
+       .types {
+        height: 15vh;
+       }
+
+}
+
+
+
+/* 600px and 759 */ 
+
+
+@media (min-width:600px) and (max-width:749px) {
+
+
+
+
+         nav {
+            padding: 0 4rem;
+         }
+
+
+         .content {
+            padding: 0 4rem;
+            height: 65vh;
+         }
+
+         .text h2 {
+
+                  font-size: 20px;
+                  font-weight: 700;
+         }
+
+
+         .text span {
+
+                          font-weight: 800;
+                          font-size: 35px;
+         }
+
+
+         .text p  {
+                    max-width: 250px;
+                     font-size: 16px;
+                     line-height: 20px;
+                     
+
+         }
+
+         .selecto img {
+            height: 200px ;
+         }
+            
+
+         nav ul li a {
+            padding: 7px 10px;
+            font-size: 16px;
+         }
+
+         nav {
+            padding: 0 1rem;
+         }
+
+          .types {
+            height: 15vh;
+          }
+
+}
+
+
+/* 250px and 599px */ 
+
+
+@media (min-width:300px) and (max-width:599px) {
+
+
+               nav {
+
+                flex-direction: column;
+                align-items: center;
+                padding: 0 0 ;
+               }
+
+
+               .selecto img {
+                height: 200px;
+               }
+
+               .selecto {
+                width: 150px;
+               }
+
+
+               .logo img {
+                rotate: 0deg;
+               }
+
+               .content {
+                padding: 0 1rem;
+                height: 65vh;
+               }
+
+               .text p {
+
+                max-width:200px;
+                font-size: 16px;
+                line-height: 20px;
+               }
+
+               .text h2 {
+                font-size: 20px;
+                font-weight: 700;
+               }
+
+               .text span {
+                font-size: 30px;
+                font-weight: 800;
+               }
+
+               nav a {
+                              font-size: 14px;
+                              font-weight: 500;
+                              
+               }
+
+
+
+}
+
+
+
+/* 280px only (Galaxy Fold) */
+
+@media (max-width:280px) {
+
+
+    nav {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 ;
+       }
+
+
+       .selecto img {
+        height: 150px;
+       }
+
+       .selecto {
+        width: 110px;
+       }
+
+
+       .logo img {
+        rotate: 0deg;
+        height: 40px;
+       }
+
+       .content {
+        padding: 0 20px;
+        height: 65vh;
+       }
+
+       .text p {
+
+        max-width:200px;
+        font-size: 12px;
+        line-height: 15px;
+       }
+
+       .text h2 {
+        font-size:15px;
+        font-weight: 700;
+       }
+
+       .text span {
+        font-size: 25px;
+        font-weight: 800;
+       }
+
+       nav a {
+                      font-size: 12px;
+                      font-weight: 500;
+                      
+                      
+       }
+
+
+       li {
+        padding: 5px 8px;
+       }
+
+
+
+       .types img {
+        height: 60px;
+       }
 
 
 
